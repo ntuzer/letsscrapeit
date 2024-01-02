@@ -1,6 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { fadeIn, staggerContainer } from "../utils/motion"
+import { contactSubmit } from "../utils/contact.js"
 
 const Contact = () => {
   return (
@@ -169,7 +170,7 @@ const Contact = () => {
             <div className="card-body mx-auto w-full overflow-hidden rounded-lg px-8 py-10 shadow-xl outline outline-base-content/5 lg:max-w-xl">
               <h1 className="card-title">What do you want to ask</h1>
 
-              <form className="mt-6">
+              <form className="mt-6" onSubmit={contactSubmit}>
                 <div className="flex-1">
                   <label htmlFor="name" className="mb-2 block text-sm">
                     Full Name

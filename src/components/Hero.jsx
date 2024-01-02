@@ -38,7 +38,7 @@ const Hero = () => {
             <a
               href="#contactus"
               className="btn btn-neutral md:btn-lg rounded-full font-poppins shadow-md">
-              Get Started
+              Email Us Now
             </a>
             {/* <a href="/" className="btn btn-ghost md:btn-lg rounded-full font-poppins font-light">
               Read success stories
