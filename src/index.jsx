@@ -10,7 +10,7 @@ function logAnalytics(){
   // console.log("logAnalytics");
   axios({
     method: "GET",
-    url: "http://localhost:10000/lsi/analytics",
+    url: "https://render-server-m6tq.onrender.com/lsi/analytics",
   })
 }
 
