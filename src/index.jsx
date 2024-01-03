@@ -8,9 +8,18 @@ import { ThemeProvider } from "react-hook-theme";
 
 function logAnalytics(){
   // console.log("logAnalytics");
+  const window_size = window.screen.width + 'x' + window.screen.height;
+
   axios({
-    method: "GET",
+    method: "POST",
     url: "https://render-server-m6tq.onrender.com/lsi/analytics",
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+    data: {
+      referer: ref,
+      window_size
+    }
   })
 }
 
