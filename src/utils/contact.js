@@ -3,8 +3,8 @@ import axios from "axios";
 
 export const contactSubmit = async (data) => {
   const { name: { value: nameValue }, email: { value: emailValue }, message: { value: messageValue }, } = data.target.elements;
-
-  const res = await axios({
+  const ref = document.referrer;
+  await axios({
     url: 'https://render-server-m6tq.onrender.com/api/lsi/contact',
     method: 'POST',
     headers: {
@@ -14,8 +14,9 @@ export const contactSubmit = async (data) => {
       name: nameValue,
       email: emailValue,
       message: messageValue,
+      referrer: ref,
     }
   });
 
-  console.log(res);
+  // console.log(res);
 }
