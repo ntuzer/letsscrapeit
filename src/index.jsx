@@ -8,6 +8,7 @@ import { ThemeProvider } from "react-hook-theme";
 
 function logAnalytics(){
   // console.log("logAnalytics");
+  const ref = document.referrer;
   const window_size = window.screen.width + 'x' + window.screen.height;
 
   axios({
